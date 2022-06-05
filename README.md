@@ -6,7 +6,7 @@ This project seeks to analyze temperature trends in Oahu in order to determine i
 
 ## Results
 
-The results obtained showed that the temperature is consistent through the year. The temperature is pretty similar for both June and December. The following images showed these findings. 
+The results obtained showed that the temperature is consistent through the year. The temperature is pretty similar for both June and December. The following images show these findings. 
 
 ![](Resources/june_results.png)
 
