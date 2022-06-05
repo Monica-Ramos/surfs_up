@@ -10,6 +10,7 @@ The results obtained showed that the temperature is consistent through the year.
 
 ![](Resources/june_results.png)
 
+
 ![](Resources/december_results.png)
 
 * The average temperature for June is 75 and 71 for December, with just a difference of 4 degrees. 
@@ -23,13 +24,13 @@ The previous results showed that the temperature is consistent during the year, 
 In order to analyze another weather parameter, we can create new queries to analyze the precipitation for both months.
 The queries to do so, are the next ones:
 
-Query to determine the precipitation for June
+### Query to determine the precipitation for June
 june_precipitation=[]
 june_precipitation=session.query(Measurement.date,Measurement.prcp).filter(extract('month',Measurement.date)==6).all()
 june_precipitation_df= pd.DataFrame(june_precipitation,columns=['date','June Precipitation'])
 june_precipitation_df.describe()
 
-Query to determine the precipitation for December
+### Query to determine the precipitation for December
 december_precipitation=[]
 december_precipitation=session.query(Measurement.date,Measurement.prcp).filter(extract('month',Measurement.date)==6).all()
 december_precipitation_df= pd.DataFrame(december_precipitation,columns=['date','December Precipitation'])
